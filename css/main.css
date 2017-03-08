@@ -1,0 +1,146 @@
+.reveal kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 1em Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 1;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  text-transform: none;
+}
+
+.reveal section .img-dity {
+  margin: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.flexbox {
+  display: flex;
+}
+.flex {
+  flex: 1;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-359deg); }
+}
+
+.icon-exchange {
+  transition: .3s;
+}
+
+.icon-exchange.animated {
+  animation: spin 2s 2 linear;
+}
+
+.babel-tick-list + .babel-tick-list {
+  margin-left: 100px;
+}
+
+ul.babel-tick-list li {
+  color: #449d44;
+  padding-left: 0px;
+  list-style-type: none;
+  white-space: nowrap;
+  font-size: 22px;
+}
+
+ul.babel-tick-list li:before {
+  font-weight: bold;
+  content: "✓";
+  padding-right: 10px;
+}
+
+ul.babel-tick-list li.dots:before {
+  display: none;
+}
+
+.reveal .logo {
+  vertical-align: middle;
+}
+
+.reveal .brand {
+  color: #fff;
+  vertical-align: middle;
+  font-size: 80px;
+  letter-spacing: -0.05em;
+  font-family: source-sans-pro,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.reveal .link {
+  margin-top: 80px;
+}
+
+.reveal .pug-tick li {
+  font-size: 36px;
+}
+
+.file-processor-group {
+  height: 150px;
+}
+
+.line {
+  display: block;
+  width: 0;
+  height: 6px;
+  border-radius: 4px;
+  background: #fff;
+  transition: .3s;
+}
+
+.file-processor.visible .line {
+  width: 200px;
+}
+
+.file-processor {
+  position: relative;
+}
+
+.file-processor > div {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+}
+
+.file-type {
+  width: 100px;
+}
+
+.reveal .fz80 {
+  font-size: 80px;
+}
+
+.shortcuts {
+  display: inline-block;
+  text-align: left;
+}
+
+.reveal h2 {
+  color: #61dafb;
+}

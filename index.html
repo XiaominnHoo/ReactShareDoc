@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" class=" js no-mobile desktop no-ie chrome chrome52 root-section gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius cssreflections csstransforms csstransitions no-touch retina fontface domloaded w-1239 gt-240 gt-320 gt-480 gt-640 gt-768 gt-800 gt-1024 lt-1280 lt-1440 lt-1680 lt-1920 no-portrait landscape"
+    id="web-cube-page">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>React</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="./css/reveal.css">
+  <link rel="stylesheet" href="./css/black.css" id="theme">
+  <link rel="stylesheet" href="./css/zenburn.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? './css/pdf.css' : './css/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+  <style>
+    #demo input{
+      width: 20%;
+      height: 40px;
+      font-size: 20px;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="./css/paper.css">
+</head>
+
+<body style="transition: -webkit-transform 0.8s ease;">
+  <div class="reveal slides center" role="application" data-transition-speed="default" data-background-transition="zoom">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides" style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.443571);">
+      <section style="top: 208.5px; display: block;" class="present">
+        <p>
+          <img class="img-dity" src="./img/react.png" />
+        </p>
+        <strong style="color: #61dafb; font-size: 45px">React</strong>
+        <p style="font-size: 20px">A JAVASCRIPT LIBRARY FOR BUILDING USER INTERFACES</p>
+      </section>
+
+      <section style="top: 0px; display: block;" hidden="" aria-hidden="true" class="stack future">
+        <section style="top: 264px; display: block;">
+          <h2>简单（数据驱动）</h2>
+          <p>
+            当底层的数据变了，React 会自动处理所有用户界面的更新。
+          </p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <p>
+            <div id="demo"></div>
+          </p>
+        </section>
+      </section>
+      <section style="top: 330px; display: none;" hidden="" aria-hidden="true" class="stack future">
+        <section style="top: 330px; display: none;">
+          <h2>声明式</h2>
+          <p>仅仅只要表达出你的应用程序在任一个时间点应该长的样子</p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <h2>命令式写法</h2>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <ul>
+            <li>Go to kitchen</li>
+            <li>Open fridge</li>
+            <li>Get chicken from fridge</li>
+            <li>Bring food to table</li>
+          </ul>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <h2>声明式写法</h2>
+          <p>I want a dinner with chicken.</p>
+        </section>
+      </section>
+      <section style="top: 0px; display: block;" hidden="" aria-hidden="true" class="stack future">
+        <section style="top: 270.5px; display: block;">
+          <h2>组件化</h2>
+          <p>
+            React 都是关于构建可复用的组件。通过 React 你唯一要做的事情就是构建组件。
+            得益于其良好的封装性，组件使代码复用、测试和关注分离（separation of concerns）更加简单。
+          </p>
+        </section>
+      </section>
+      <section style="top: 330px; display: none;" hidden="" aria-hidden="true" class="stack future">
+        <section style="top: 330px; display: none;">
+          <h2>虚拟DOM</h2>
+          <p>
+            React不操作 DOM，除非不得不操作 DOM 。它用一种更快的内置仿造的 DOM 来操作差异，为你计算出效率最高的 DOM 改变。只会更新变化的部分。
+          </p>
+        </section>
+      </section>
+
+      <section style="top: 330px; display: none;" hidden="" aria-hidden="true" class="stack future">
+        <section style="top: 330px; display: none;">
+          <h2>JSX</h2>
+          <p>
+            非常简单、类似 HTML 语法。
+          </p>
+          <p>让你可以用 HTML 语法去写 JavaScript 函数调用</p>
+        </section>
+        <section style="top: 330px; display: none;">
+          <h2>JSX语法介绍</h2>
+          <p>
+            <img src="./img/jsx.png" />
+          </p>
+        </section>
+      </section>
+
+      <section style="top: 330px; display: none;" hidden="" aria-hidden="true" class="stack future">
+        <section style="top: 330px; display: none;">
+          <h2>如何传递数据</h2>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <h3>props</h3>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <p>
+            <img class="img-dity" src="./img/parent-compo.png" />
+          </p>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+            <img class="img-dity" src="./img/child-compo.png" />
+          <!--<p data-height="265" data-theme-id="light" data-slug-hash="akxpjv" data-default-tab="js" data-user="xiaomin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/xiaomin/pen/akxpjv/">akxpjv</a> by xiaomin (<a href="http://codepen.io/xiaomin">@xiaomin</a>) on <a href="http://codepen.io">CodePen</a>.</p>-->
+          <!--<script async src="//assets.codepen.io/assets/embed/ei.js"></script>-->
+        </section>
+      </section>
+
+      <section style="top: 330px; display: none;" hidden="" aria-hidden="true" class="stack future">
+        <section style="top: 330px; display: none;">
+          <h2>组件间通信</h2>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <h2>父-子 通信</h2>
+          <p> 直接 pass props</p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <h2>子-父 通信</h2>
+          <p>回调函数作为 prop 由父组件传递个子组件，子组件内调用回调函数，把数据作为回调函数的参数传回父组件</p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <p>
+            <img class="img-dity" src="./img/todo.png" />
+          </p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <p>
+            <img class="img-dity" src="./img/newtodo.png" />
+          </p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <h2>兄弟组件通信</h2>
+          <p>可以由一个组件传递数据到共同的父组件，由父组件传递给子组件</p>
+        </section>
+      </section>
+
+      <section style="top: 330px; display: none;" hidden="" aria-hidden="true" class="stack future">
+        <section style="top: 330px; display: none;">
+          <h2>组件嵌套太深呢，数据传递很心塞。。。。。。</h2>
+        </section>
+      </section>
+
+      <section style="top: 330px; display: none;" hidden="" aria-hidden="true" class="stack future">
+        <section style="top: 330px; display: none;">
+          <h2>Redux</h2>
+          <p>Redux 是什么？</p>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <h2>Redux 是应用状态管理服务</h2>
+          <p>它虽然受到了 Flux 很深的影响，但是核心概念更加简单，就是 Map/Reduce 中的 Reduce</p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <p>
+            <img class="img-dity" src="./img/reduce.png" />
+          </p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <h2>Store介绍</h2>
+          <p>一个应用只有一个Store</p>
+          <p> 保存应用的状态，提供一些方法给组件调用</p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <h2>Action介绍</h2>
+          <p>Actions 是把数据从应用传到 store 的有效载荷。它是 store 数据的<strong style="color: red;">唯一</strong>来源</p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <h2>Action用法</h2>
+          <p>
+            普通的JavaScript 对象，必须有type 属性；
+          </p>
+          <p>
+            例如 { type: 'ADD_TO_DO', text: 'Learn Redux' }
+          </p>
+          <p> 通过store.dispatch(action) 把 action 传到 store</p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <h2>State介绍</h2>
+          <p>
+            普通的JavaScript 对象来定义你的应用的状态，所有的状态都在这个对象中管理。
+          </p>
+          <p>例如： { todos: [], filter: 'SHOW_ALL' }</p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <h2>Reducer介绍</h2>
+          <p>Action 只是描述了有事情发生了这一事实，并没有指明应用如何更新 state。这是 reducer 要做的事情。</p>
+          <p>Action就像leader，告诉我们应该做哪些事，并且给我们提供‘资源（就是上面说的数据）’，真正干活的是苦逼的Reducer。。</p>
+          <p>
+            普通的JavaScript 函数，state和 action作为参数传入reducer 函数，经过相应的计算，返回新的state 对象
+          </p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <h2>Reducer用法</h2>
+          <p>
+            一个普通的JavaScript 函数，state和 action作为参数传入reducer 函数，经过相应的计算，返回新的state 对象
+          </p>
+          <p>
+            <img src="./img/reducer.png" />
+          </p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <h2>Redux 流程图</h2>
+          <p>
+            <img src="./img/reduxFlow.png" height="520px" width="500px"/>
+          </p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 330px; display: none;">
+          <h2>Redux</h2>
+          <p><img src="./img/smile.jpg" height="500px" width="500px"/></p>
+        </section>
+      </section>
+    </div>
+
+    <div class="backgrounds">
+      <div class="slide-background present" data-loaded="true" style="display: block;"></div>
+      <div class="slide-background stack future" data-loaded="true" style="display: block;">
+        <div class="slide-background present" data-loaded="true" style="display: block;"></div>
+        <div class="slide-background future" data-background-hash="0#fffnullnullnull" style="display: block; background-color: rgb(255, 255, 255);" data-loaded="true"></div>
+      </div>
+      <div class="slide-background stack future" data-loaded="true" style="display: block;">
+        <div class="slide-background present" data-loaded="true" style="display: block;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" data-background-hash="0#263238nullnullnull" style="display: none; background-color: rgb(38, 50, 56);"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background future" style="display: none;"></div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" data-background-hash="0#fffnullnullnull" style="display: none; background-color: rgb(255, 255, 255);"></div>
+        <div class="slide-background future" data-background-hash="0#fffnullnullnull" style="display: none; background-color: rgb(255, 255, 255);"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" data-background-hash="0#f3f3f3nullnullnull" style="display: none; background-color: rgb(243, 243, 243);"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" data-background-hash="0#f5da55nullnullnull" style="display: none; background-color: rgb(245, 218, 85);"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background future" style="display: none;"></div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" data-background-hash="0#e94c43nullnullnull" style="display: none; background-color: rgb(233, 76, 67);"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background future" style="display: none;"></div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" data-background-hash="0#263238nullnullnull" style="display: none; background-color: rgb(38, 50, 56);"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" data-background-hash="0#cf4646nullnullnull" style="display: none; background-color: rgb(207, 70, 70);"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" data-background-hash="0#263238nullnullnull" style="display: none; background-color: rgb(38, 50, 56);"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background stack future" style="display: none;">
+        <div class="slide-background present" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="slide-background future" style="display: none;"></div>
+    </div>
+    <div class="progress" style="display: block;"><span style="width: 0px;"></span></div>
+    <aside class="controls" style="display: block;">
+      <button class="navigate-left" aria-label="previous slide"></button>
+      <button class="navigate-right enabled" aria-label="next slide"></button>
+      <button class="navigate-up" aria-label="above slide"></button>
+      <button class="navigate-down" aria-label="below slide"></button>
+    </aside>
+    <div class="slide-number" style="display: none;"></div>
+    <div class="speaker-notes" data-prevent-swipe=""></div>
+    <div class="pause-overlay"></div>
+    <div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px);">
+       轻量高效的组件化解决方案
+    </div>
+  </div>
+  <script src="./js/head.min.js"></script>
+  <script src="./js/reveal.js"></script>
+  <script src="./js/main.js"></script>
+  <script type="text/javascript" src="./js/highlight.js"></script>
+  <script type="text/javascript" src="./js/zoom.js"></script>
+  <script type="text/javascript" src="./js/notes.js"></script>
+  <script src="http://cdn.bootcss.com/react/0.14.0/react.min.js"></script>
+  <script src="http://cdn.bootcss.com/react/0.14.0/react-dom.js"></script>
+  <script src="./js/browser.min.js"></script>
+  <script type="text/babel">
+    var HelloWorld = React.createClass({
+      getInitialState: function() {
+        return {
+          text: 'Hello World'
+        };
+      },
+
+      changeHanlder: function(e) {
+        this.setState({
+          text: e.target.value,
+        });
+      },
+
+      render: function() {
+        return (
+            <div>
+              <h1>{this.state.text}</h1>
+              <input type="text" onChange={this.changeHanlder} value={this.state.text}/>
+            </div>
+        );
+      }
+    });
+
+    ReactDOM.render(
+      <HelloWorld />,
+      document.getElementById('demo')
+    )
+  </script>
+</body>
+
+</html>
